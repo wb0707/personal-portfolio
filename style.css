@@ -538,7 +538,7 @@ h4{
 @media (max-width: 505px){
 
     nav{
-        width: 100%;
+        width: 100% !important;
     }
 
     .service, .project{
@@ -569,7 +569,7 @@ h4{
 
     /* FOOTER */
     footer{
-        width: 100%;
+        width: 100% !important;
     }
     
     .last-box{
