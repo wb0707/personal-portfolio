@@ -539,18 +539,18 @@ h4{
 
     .service, .project{
         
-        width:70vw !important;
-        height:50vw !important;
+        width:80vw !important;
+        height:80vw !important;
         margin-bottom: 2.8em;
      
     }
 
     .service h2{
-        margin-top: 14vw;
+        margin-top: 32vw;
     }
     
     .project-title{
-        margin-top: 14vw !important;
+        margin-top: 33vw !important;
     }
 
     .service p, .project p{
