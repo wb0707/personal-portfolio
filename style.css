@@ -219,8 +219,9 @@ hr{
 }
 
 .service p, .project p{
-    font-size: small;
-    padding-left:8%;
+    font-size: 11px;
+    padding:8px;
+    margin-left:4%;
 }
 
  
@@ -229,10 +230,11 @@ hr{
 /*==== PROJECTS====*/
 .projects{
     overflow: hidden;
-    padding-bottom: 6% !important;
+    padding-bottom: 6em !important;
     width: 100%;
     height: auto !important;
     margin-top:0% !important;
+    margin-bottom: 0.5em;
 }
 .projects-title{
   text-align: center;
@@ -278,6 +280,7 @@ hr{
          padding-top: 7em;
          justify-content: center;
          align-items: center;
+     
     }
 
     form h2{
@@ -292,7 +295,11 @@ hr{
         border-radius:6px;
         border: none;
         width: 20em;
+        background-color: #0d154331;
+        color: #fff;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     }
+
     #email{
         padding: 1em;
     }
@@ -304,34 +311,46 @@ hr{
 
     form button{
      padding: 0.7em;
-     margin-left:-27%;
+     margin-left: -15em !important;
     background-color: rgba(30, 29, 71, 0.514);
     color: #fff;
     border-radius: 14px;
     border: 0px;
     transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     }
 
 
 /*====FOOTER====*/
 footer{
     width:100%;
-    height:19em;
+    height:auto;
     background-color: #1c20365e;
     color: #0B2A41;
     bottom:0;
     position:relative;
     overflow: hidden;
+    padding: 2% 0%;
 }
 
 .mainbox{
     display:flex;  
-
+    padding-bottom: 0% 0%;
+   
 }
 
 .box1{
-    width:50%;
-    
+    width:33.33%;
+    /* border: 1px solid red; */
+   
+}
+
+.box1 h5{
+  position: absolute;
+  margin-left: 4%;
+  font-size: 15px;
+  z-index: 6;
+  color: rgb(181, 219, 240);
 }
 
 .footer-link{
@@ -340,26 +359,26 @@ footer{
     padding-bottom: 10%;
     padding-top:10%;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 0.3em;
-
+    /* border: 1px solid rgb(0, 4, 255); */
 }
 
 .footer-link li {
     list-style: none;
-    padding-bottom: 1.7em;
-   
+    margin-bottom: 1.7em;
+   /* border: 1px solid red; */
 }
 
 .footer-link li a{
         text-decoration:none;
-        color:#fff;
-        transition: 0.5s;
-        
+        color:rgba(185, 171, 243, 0.871);
+        transition: 0.1s;
+        font-size: 11px;
 }
 
 .footer-link li a:hover{
-        color:rgba(226, 96, 113, 0.897);
+        color:rgba(130, 204, 185, 0.939);
         padding:1px;   
 }
 
@@ -374,7 +393,7 @@ h4{
 
 /*====MEDIA QUERY====*/
 
-@media (max-width: 765px){
+@media (max-width: 700px){
  
     .logo{
         padding-left:1%;
@@ -408,8 +427,10 @@ h4{
     }
     .banner-left{
         padding: 4%;
-
+        /* border: 1px solid red; */
+        margin-left: 7em;
     }
+
     .banner-left h1{
         font-size: 23px;
         padding-bottom: 4%;
@@ -422,8 +443,26 @@ h4{
     }
 
     .banner-left .icons{
-        margin-left: -2px;
+        /* margin-left: ; */
     }
+
+.banner-left .buttons{
+    /* border: 1px solid red; */
+    width: 22em !important;
+    margin-left: -2.3em;
+}
+
+.buttons a, button{
+    padding:4%;
+    margin-left:2%;
+    background-color: rgba(30, 29, 71, 0.514);
+    color: #fff;
+    border-radius: 14px;
+    border: 0px;
+    transition: 0.8s;
+ 
+
+}
 
     .banner-right{
         display: none;
@@ -443,25 +482,20 @@ h4{
         align-items: center;
         margin-top: 4%;
     }
-
-    .service{
-        /* width:70vw !important;
-        height:49vh !important; */
-    }
-
     .service, .project{
         
         width:70vw !important;
-        height:49vh !important;
+        height:50vw !important;
         margin-bottom: 2.8em;
+     
     }
 
     .service h2{
-        margin-top: 6.5em;
+        margin-top: 17vw;
     }
     
     .project-title{
-        margin-top: 6.6em;
+        margin-top: 17vw !important;
     }
 
     /*====CONTACT====*/
@@ -485,11 +519,48 @@ h4{
         
     }
     
+    .box1{
+        width:50%;
+    }
+
+    
     .footer-link li{
-        padding-bottom: 3em;
+        margin-bottom: 3em;
     }
 
     h4{
         margin-top:1%;
+    }
+}
+
+
+
+@media (max-width: 505px){
+
+    .service, .project{
+        
+        width:70vw !important;
+        height:50vw !important;
+        margin-bottom: 2.8em;
+     
+    }
+
+    .service h2{
+        margin-top: 14vw;
+    }
+    
+    .project-title{
+        margin-top: 14vw !important;
+    }
+
+    .service p, .project p{
+        font-size: 11px;
+        padding-left:8%;
+    }
+    
+
+    /* FOOTER */
+    .last-box{
+        display: none;
     }
 }
