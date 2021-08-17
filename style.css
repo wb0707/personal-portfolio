@@ -2,6 +2,7 @@
     margin:0px;
     box-sizing:border-box;
     text-decoration: none;
+    box-sizing: border-box;
  
 }
 
@@ -168,6 +169,81 @@ button:hover, .buttons a:hover{
   
 }
 
+/*======= text-typing animation========= */
+
+.text-typing{
+    display: flex;
+    /* border: 1px solid rebeccapurple; */
+    width: 22em;
+    height: auto;
+     margin-top: 1em;
+    margin-bottom: 1.3em;
+  }
+
+  .text-typing h3{
+  
+   color: rgb(205, 184, 243);
+   font-size: 23px;
+   font-weight: 900;
+   margin-top: -5px; 
+   height: auto !important;
+   position: absolute;
+   /* padding-top: 15px; */
+  }
+
+  .dynamic-text{
+       margin-left: 2.8em;
+       overflow: hidden !important;
+       height: 28px;
+       /* background: #7357d8; */
+
+      
+  }
+
+ .dynamic-text li{
+    list-style: none;
+    animation: slide 8s steps(4) infinite;
+    position: relative;
+       top:0;
+    
+  }
+
+  @keyframes slide{
+      100%{
+          top: -128px;
+          /* margin: 0 -35px 0 35px; */
+      }
+      
+  }
+
+ .dynamic-text li span{
+      color: #fc6d6d;
+      font-weight: 900;
+      position: relative;
+      font-size: 21px;
+      
+  }
+
+.dynamic-text li  span::after{
+     content: " ";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     background:  #232944;
+     border-left: 2px solid #fc6d6d;
+     animation: text 2s steps(10) infinite;
+  
+  }
+
+  @keyframes text{
+      100%{
+          left: 100%;
+          margin: 0 -35px 0 35px;
+      }
+      
+  }
+
 /*====OUR SERVICES====*/
 .services-title{
   text-align: center;
@@ -207,9 +283,9 @@ hr{
     background-color: rgba(62, 45, 100, 0.556);
 }
 
-.service i{
+/* .service i{
 
-}
+} */
 
 
 .service h2{
@@ -254,15 +330,15 @@ hr{
 }
 
 /*====TEAM MEMBERS====*/
-.tem-members{
+/* .tem-members{
 
-}
+} */
 
 
 /*=====REVIEW====*/
-.review{
+/* .review{
 
-} 
+}  */
 
 .hamburger{
     display: none;
@@ -442,9 +518,9 @@ h4{
         margin-left: 0.5em;
     }
 
-    .banner-left .icons{
-        /* margin-left: ; */
-    }
+    /* .banner-left .icons{
+        margin-left: ;
+    } */
 
 .banner-left .buttons{
     /* border: 1px solid red; */
@@ -499,7 +575,7 @@ h4{
     }
 
     /*====CONTACT====*/
-    form{
+    /* form{
 
     }
 
@@ -509,7 +585,7 @@ h4{
 
     form button{
 
-    }
+    } */
 
     /*====FOOTER===*/
     .footer-link{
@@ -538,7 +614,8 @@ h4{
 @media (max-width: 505px){
 
     nav{
-        width: 100% !important;
+        width: 100%;
+        top:0;
     }
 
     .service, .project{
@@ -551,6 +628,7 @@ h4{
   
     .service p, .project p{
        margin-left: -2%;
+       position: absolute !important;
     }
 
     .service h2{
@@ -569,7 +647,7 @@ h4{
 
     /* FOOTER */
     footer{
-        width: 100% !important;
+        width: 100%;
     }
     
     .last-box{
