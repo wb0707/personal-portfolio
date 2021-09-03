@@ -101,7 +101,7 @@ nav{
     
 }
 
-.banner-left p {
+.banner-left h5 {
 
     padding:3%;
 }
@@ -162,25 +162,17 @@ button:hover, .buttons a:hover{
 }
 
 .banner-right img{
-  border-radius:  50%;
+  border-radius:  50%; 
   width: 14em;
   height:15em;
   opacity: 0.7;
   
-}
-
-
-.text-typing h5{
-   margin-left:2em;
-    padding:9px;
-    position:absolute;
-    color:red;
-}
-
+} 
+ 
 /*======= text-typing animation========= */
 
 .text-typing{
-    display: flex;
+    display: flex; 
     /* border: 1px solid rebeccapurple; */
     width: 22em;
     height: auto;
@@ -202,7 +194,7 @@ button:hover, .buttons a:hover{
   .dynamic-text{
        margin-left: 2.8em;
        overflow: hidden !important;
-       height: 28px;
+       height: 27px;
        /* background: #7357d8; */
 
       
@@ -213,6 +205,7 @@ button:hover, .buttons a:hover{
     animation: slide 8s steps(4) infinite;
     position: relative;
        top:0;
+ 
     
   }
 
@@ -229,7 +222,7 @@ button:hover, .buttons a:hover{
       font-weight: 900;
       position: relative;
       font-size: 21px;
-      
+ 
   }
 
 .dynamic-text li  span::after{
@@ -419,7 +412,7 @@ footer{
 
 .mainbox{
     display:flex;  
-    padding-bottom: 0%;
+    padding-bottom:0%;
    
 }
 
@@ -649,7 +642,7 @@ h4{
 
     .service p, .project p{
         font-size: 11px;
-        padding-left:8%; 
+        padding-left:8%;
     }
     
 
