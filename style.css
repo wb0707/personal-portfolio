@@ -170,9 +170,11 @@ button:hover, .buttons a:hover{
 }
 
 
-h5{
+.text-typing h5{
    margin-left:2em;
     padding:9px;
+    position:absolute;
+    color:red;
 }
 
 /*======= text-typing animation========= */
@@ -647,7 +649,7 @@ h4{
 
     .service p, .project p{
         font-size: 11px;
-        padding-left:8%;
+        padding-left:8%; 
     }
     
 
