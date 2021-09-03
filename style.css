@@ -169,6 +169,12 @@ button:hover, .buttons a:hover{
   
 }
 
+
+h5{
+   margin-left:2em;
+    padding:9px;
+}
+
 /*======= text-typing animation========= */
 
 .text-typing{
