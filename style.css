@@ -415,9 +415,9 @@ footer{
 }
 
 .mainbox{
-    display:flex;  
+    display:none;  
     padding-bottom:0%;
-   display:none;
+   
 }
 
 .box1{
@@ -468,7 +468,6 @@ h4{
     color:white;
     margin-top: 1%;
     margin-bottom:0.2em ;
-    font-size:11px;
 }
 
 
