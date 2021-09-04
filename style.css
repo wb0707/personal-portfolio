@@ -505,7 +505,7 @@ font-size :11px;
     /*====BANNER====*/
     .banner{
         height: 25em;
-        border-bottom:none;
+        border-bottom:none !important;
     }
     .banner-left{
         padding: 4%;
