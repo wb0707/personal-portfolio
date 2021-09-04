@@ -98,22 +98,23 @@ nav{
 .banner-left{
     
     margin-left:7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .banner-left h5 {
- margin-left: 1em;
- padding-bottom:2em;
-padding:7px;
-   
+    padding-bottom:1em;
+     padding-top: 1em;
 }
 
 .icons{
     padding: 4px;
     padding-bottom: 1em;
     /* background-color: red; */
-    width: 13em !important;
-    margin-left:1.3em ;
+    width: 11em !important;
 }
 
 .icons i{
@@ -134,10 +135,13 @@ padding:7px;
 }
 
 
-
 .banner-left .buttons{
-  padding:2%;
-margin-top :0.7em;
+    padding:4px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    width: 17em !important;
+  margin-top: 0.1em;
 }
 
 .buttons a, button{
@@ -505,7 +509,7 @@ h4{
     .banner-left{
         padding: 4%;
         /* border: 1px solid red; */
-        margin-left: 7em;
+       
     }
 
     .banner-left h1{
@@ -514,24 +518,15 @@ h4{
         margin-left: -0.5em;
     }
 
-    .banner-left p{
-      
-        margin-left: 0.5em;
-    }
-
-    /* .banner-left .icons{
-        margin-left: ;
-    } */
 
 .banner-left .buttons{
     /* border: 1px solid red; */
-    width: 22em !important;
-    margin-left: -2.3em;
+    width: 16em !important;
+   
 }
 
 .buttons a, button{
     padding:4%;
-    margin-left:2%;
     background-color: rgba(30, 29, 71, 0.514);
     color: #fff;
     border-radius: 14px;
