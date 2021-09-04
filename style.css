@@ -468,6 +468,7 @@ h4{
     color:white;
     margin-top: 1%;
     margin-bottom:0.2em ;
+font-size :11px;
 }
 
 
@@ -504,7 +505,7 @@ h4{
     /*====BANNER====*/
     .banner{
         height: 25em;
-        
+        border-bottom:none;
     }
     .banner-left{
         padding: 4%;
